@@ -1,2 +1,4 @@
 # pokemon-autoencoder
- Experimenting with an Autoencoder (AE) Neural Network on a dataset of images of Pokemon
+ Experimenting with an Autoencoder (AE) Neural Network on a dataset of images of Pokemon. We explored architectures with varying numbers of layers, convolution kernel sizes, size of the latent representation and final activation functions. The best results were achieved with the network specified in models.py, which has 5 layers in each of the Encoder and Decoder and was trained for 10,000 epochs. In the image below, the first row shows a corrupted image which is input into the Autoencoder, the second row shows the uncorrupted image (for our personal reference) and the third row shows the output of the Autoencoder. The network is able to successfully recover many details of the original image, with the most noticeable fault being its inconsistency in recovering fine lines such as tails of the Pokemon. 
+
+[Gotta catch em all!](experiment_results\5layer_10000epoch\sample-070000.png)
