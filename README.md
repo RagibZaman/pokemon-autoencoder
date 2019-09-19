@@ -5,6 +5,6 @@ In the image below, the first row shows a corrupted image which is input into th
 
 ![Gotta catch em all!](experiment_results/5layer_10000epoch/sample-070000.png)
 
-The following image shows the output of the network when given random noise as input. In a loose sense, this represents the networks attempt at returning an image of a pokemon similar to the random input. At a glance they do appear to have some resemblance to a pokemon, although a closer inspection reveals them to be mostly colourful blobs. To make these generated pokemon appear more to our expectations, we could model the distribution of the original pokemon data set and give inputs which are sampled from this distribution (instead of simply giving random noise as inputs).
+The following image shows the output of the Decoder when given random noise as the latent representation input. In a loose sense, this represents the networks attempt at returning an image of a pokemon generated from the random latent representation. At a glance they do appear to have some resemblance to a pokemon, although a closer inspection reveals them to be mostly colourful blobs. To make these generated pokemon appear more to our expectations, we could model the distribution of the latent representations of the original pokemon data set and give inputs which are sampled from this distribution (instead of simply giving random noise as inputs).
 
 ![Gotta catch em all!](experiment_results/5layer_10000epoch/novel-070000.png)
